@@ -1,0 +1,240 @@
+/* Reset dan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; 
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-image: url('./images/backgroundImage.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.boxchart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.boxchart .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px; 
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #666;
+}
+
+.price del {
+    color: #aaa;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.quantity button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.quantity .minus {
+    border-radius: 8px 0 0 8px;
+}
+
+.quantity .plus {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.quantity button:hover {
+    background-color: #272727;
+}
+
+.input-box {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #000000;
+    padding: 8px;
+    font-size: 1rem;
+    outline: none;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Hilangkan tombol spin pada input number */
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-box[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Pemisah antar item */
+.item-separator {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+/* Tombol tindakan */
+button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #2d2d2d;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.summary-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ddd; 
+}
+
+
+.total {
+    text-align: left;
+}
+
+.total span {
+    display: block; 
+    font-size: 1rem;
+    font-weight: bold; 
+    color: #333;
+}
+
+.actions {
+    display: flex;
+    gap: 10px; 
+}
+
+.actions button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.actions button:hover {
+    background-color: #444;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .boxchart {
+        width: 95%;
+    }
+
+    .quantity button {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .input-box {
+        width: 40px;
+        font-size: 0.9rem;
+    }
+}

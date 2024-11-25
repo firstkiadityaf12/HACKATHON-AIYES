@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodDetection - Keranjang</title>
+    <link rel="stylesheet" href="chartshop.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Keranjang Kamu</h1>
+        <div class="boxchart">
+            <!-- Barang 1 -->
+            <div class="item">
+                <div class="item-details">
+                    <span class="name">Bawang Putih</span>
+                    <span class="price">Rp13.900, <del>Rp44.990</del></span>
+                </div>
+                <div class="quantity">
+                    <button class="minus" aria-label="Decrease">&minus;</button>
+                    <input type="number" class="input-box" value="1" min="1" max="10">
+                    <button class="plus" aria-label="Increase">&plus;</button>
+                </div>
+            </div>
+            <hr class="item-separator">
+
+            <!-- Barang 2 -->
+            <div class="item">
+                <div class="item-details">
+                    <span class="name">Bawang Merah</span>
+                    <span class="price">Rp13.900, <del>Rp44.990</del></span>
+                </div>
+                <div class="quantity">
+                    <button class="minus" aria-label="Decrease">&minus;</button>
+                    <input type="number" class="input-box" value="1" min="1" max="10">
+                    <button class="plus" aria-label="Increase">&plus;</button>
+                </div>
+            </div>
+            <hr class="item-separator">
+
+             <!-- Barang 3 -->
+             <div class="item">
+                <div class="item-details">
+                    <span class="name">Telur Ayam</span>
+                    <span class="price">Rp2.000, <del>Rp4.990</del></span>
+                </div>
+                <div class="quantity">
+                    <button class="minus" aria-label="Decrease">&minus;</button>
+                    <input type="number" class="input-box" value="1" min="1" max="10">
+                    <button class="plus" aria-label="Increase">&plus;</button>
+                </div>
+            </div>
+            <hr class="item-separator">
+
+             <!-- Barang 4 -->
+             <div class="item">
+                <div class="item-details">
+                    <span class="name">Cabai Rawit</span>
+                    <span class="price">Rp33.900, <del>Rp44.990</del></span>
+                </div>
+                <div class="quantity">
+                    <button class="minus" aria-label="Decrease">&minus;</button>
+                    <input type="number" class="input-box" value="1" min="1" max="10">
+                    <button class="plus" aria-label="Increase">&plus;</button>
+                </div>
+            </div>
+            
+            <div class="summary-container">
+                <div class="total">
+                    <span>Total (tanpa pajak):</span>
+                    <span id="total-price">Rp27.800</span>
+                </div>
+                <div class="actions">
+                    <button class="checkout">Checkout</button>
+                    <button class="refresh">⟳</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

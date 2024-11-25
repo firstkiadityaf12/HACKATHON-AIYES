@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100vw;  
+    height: 100vh; 
+    text-align: center;
+    background-image: url('./images/backgroundImage.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  
+  h1 {
+    font-size: 4rem;
+    color: white;
+  }
+  
+  .search-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+    margin: 0 auto; 
+    z-index: 1;
+  }
+
+  .search-box .background-box {
+    position: absolute;
+    width: 90%;
+    height: 115%;
+    background-color: white;
+    opacity: 100;
+    border-radius: 5px;
+    z-index: -1;
+  }
+  
+  .search-box .glass-effect {
+    position: absolute;
+    width: 95%;
+    height: 135%;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    z-index: -2;
+}
+
+  input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2d2d2d;
+  }
+  
+  .buttons {
+    margin: 20px 0;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
